@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import CoreLocation
+import Alamofire
 
-class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITableViewDataSource{
-    var x : [String] = []
+class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITableViewDataSource, CLLocationManagerDelegate{
+    
+    let manager = CLLocationManager()
+    
     let cellReuseIdentifier = "postCell"
     
     @IBOutlet var tableView: UITableView!
@@ -22,11 +26,21 @@ class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITable
         super.viewDidLoad()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 80
+        manager.delegate = self
+        manager.requestLocation()
     }
-
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let userLocation:CLLocation = locations[0]
+        let longitude = userLocation.coordinate.longitude
+        let latitude = userLocation.coordinate.latitude
+        Alamofire.request("http://api.petsavior.com/posts/nearby", method: .get, parameters: ["longitude" :longitude, "latitude": latitude, "range": "1"]).responseJSON { (response) in
+            
+        }
+    }
+   
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 100
-            //self.x.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
