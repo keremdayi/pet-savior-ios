@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0C03719E1E39F57600480C41 /* PetSaviorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C03719D1E39F57600480C41 /* PetSaviorTests.swift */; };
 		0C0371AC1E39F57E00480C41 /* PetSaviorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0371AB1E39F57E00480C41 /* PetSaviorUITests.swift */; };
+		0C0371B41E3A075E00480C41 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0371B31E3A075E00480C41 /* AddViewController.swift */; };
+		0C0371B61E3A09FA00480C41 /* cevremdekilerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0371B51E3A09FA00480C41 /* cevremdekilerViewController.swift */; };
+		0C0371B81E3A0B7C00480C41 /* cevremdekilerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0371B71E3A0B7C00480C41 /* cevremdekilerTableViewController.swift */; };
+		0C0371BA1E3A0E4F00480C41 /* animalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0371B91E3A0E4F00480C41 /* animalDetailViewController.swift */; };
+		0C0371BC1E3A14A500480C41 /* postTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0371BB1E3A14A500480C41 /* postTableViewCell.swift */; };
 		0CB004611E39E25200876F9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB004601E39E25200876F9C /* AppDelegate.swift */; };
 		0CB004631E39E25200876F9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB004621E39E25200876F9C /* ViewController.swift */; };
 		0CB004661E39E25200876F9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB004641E39E25200876F9C /* Main.storyboard */; };
@@ -41,6 +46,11 @@
 		0C0371A91E39F57D00480C41 /* PetSaviorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetSaviorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C0371AB1E39F57E00480C41 /* PetSaviorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaviorUITests.swift; sourceTree = "<group>"; };
 		0C0371AD1E39F57E00480C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C0371B31E3A075E00480C41 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		0C0371B51E3A09FA00480C41 /* cevremdekilerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cevremdekilerViewController.swift; sourceTree = "<group>"; };
+		0C0371B71E3A0B7C00480C41 /* cevremdekilerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cevremdekilerTableViewController.swift; sourceTree = "<group>"; };
+		0C0371B91E3A0E4F00480C41 /* animalDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animalDetailViewController.swift; sourceTree = "<group>"; };
+		0C0371BB1E3A14A500480C41 /* postTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = postTableViewCell.swift; sourceTree = "<group>"; };
 		0CB0045D1E39E25200876F9C /* PetSavior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSavior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB004601E39E25200876F9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CB004621E39E25200876F9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +150,11 @@
 				0CB004671E39E25200876F9C /* Assets.xcassets */,
 				0CB004691E39E25200876F9C /* LaunchScreen.storyboard */,
 				0CB0046C1E39E25200876F9C /* Info.plist */,
+				0C0371B31E3A075E00480C41 /* AddViewController.swift */,
+				0C0371B51E3A09FA00480C41 /* cevremdekilerViewController.swift */,
+				0C0371B71E3A0B7C00480C41 /* cevremdekilerTableViewController.swift */,
+				0C0371B91E3A0E4F00480C41 /* animalDetailViewController.swift */,
+				0C0371BB1E3A14A500480C41 /* postTableViewCell.swift */,
 			);
 			path = PetSavior;
 			sourceTree = "<group>";
@@ -361,6 +376,11 @@
 			files = (
 				0CB004631E39E25200876F9C /* ViewController.swift in Sources */,
 				0CB004611E39E25200876F9C /* AppDelegate.swift in Sources */,
+				0C0371BA1E3A0E4F00480C41 /* animalDetailViewController.swift in Sources */,
+				0C0371BC1E3A14A500480C41 /* postTableViewCell.swift in Sources */,
+				0C0371B81E3A0B7C00480C41 /* cevremdekilerTableViewController.swift in Sources */,
+				0C0371B41E3A075E00480C41 /* AddViewController.swift in Sources */,
+				0C0371B61E3A09FA00480C41 /* cevremdekilerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +606,7 @@
 				0C0371A31E39F57600480C41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C0371B01E39F57E00480C41 /* Build configuration list for PBXNativeTarget "PetSaviorUITests" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +615,7 @@
 				0C0371B21E39F57E00480C41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CB004581E39E25200876F9C /* Build configuration list for PBXProject "PetSavior" */ = {
 			isa = XCConfigurationList;
