@@ -1,15 +1,14 @@
 //
-//  CatSaviorTests.swift
-//  CatSaviorTests
+//  PetSaviorTests.swift
+//  PetSaviorTests
 //
 //  Created by kerem on 26/01/2017.
 //  Copyright © 2017 ACI. All rights reserved.
 //
 
 import XCTest
-@testable import CatSavior
 
-class CatSaviorTests: XCTestCase {
+class PetSaviorTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

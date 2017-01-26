@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E3CD67B181D2B1A2C614CD411C41514D"
-               BuildableName = "Pods_CatSavior.framework"
-               BlueprintName = "Pods-CatSavior"
+               BlueprintIdentifier = "C66AFBBEF4C91AE9800167A1A27341F2"
+               BuildableName = "Pods_PetSavior.framework"
+               BlueprintName = "Pods-PetSavior"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E3CD67B181D2B1A2C614CD411C41514D"
-            BuildableName = "Pods_CatSavior.framework"
-            BlueprintName = "Pods-CatSavior"
+            BlueprintIdentifier = "C66AFBBEF4C91AE9800167A1A27341F2"
+            BuildableName = "Pods_PetSavior.framework"
+            BlueprintName = "Pods-PetSavior"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

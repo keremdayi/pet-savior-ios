@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  CatSavior
+//  PetSavior
 //
 //  Created by kerem on 26/01/2017.
 //  Copyright © 2017 ACI. All rights reserved.

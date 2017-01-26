@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0CB0045C1E39E25200876F9C"
-               BuildableName = "CatSavior.app"
-               BlueprintName = "CatSavior"
-               ReferencedContainer = "container:CatSavior.xcodeproj">
+               BuildableName = "PetSavior.app"
+               BlueprintName = "PetSavior"
+               ReferencedContainer = "container:PetSavior.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0CB004701E39E25200876F9C"
-               BuildableName = "CatSaviorTests.xctest"
-               BlueprintName = "CatSaviorTests"
-               ReferencedContainer = "container:CatSavior.xcodeproj">
+               BlueprintIdentifier = "0C03719A1E39F57600480C41"
+               BuildableName = "PetSaviorTests.xctest"
+               BlueprintName = "PetSaviorTests"
+               ReferencedContainer = "container:PetSavior.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0CB0047B1E39E25200876F9C"
-               BuildableName = "CatSaviorUITests.xctest"
-               BlueprintName = "CatSaviorUITests"
-               ReferencedContainer = "container:CatSavior.xcodeproj">
+               BlueprintIdentifier = "0C0371A81E39F57D00480C41"
+               BuildableName = "PetSaviorUITests.xctest"
+               BlueprintName = "PetSaviorUITests"
+               ReferencedContainer = "container:PetSavior.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0CB0045C1E39E25200876F9C"
-            BuildableName = "CatSavior.app"
-            BlueprintName = "CatSavior"
-            ReferencedContainer = "container:CatSavior.xcodeproj">
+            BuildableName = "PetSavior.app"
+            BlueprintName = "PetSavior"
+            ReferencedContainer = "container:PetSavior.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0CB0045C1E39E25200876F9C"
-            BuildableName = "CatSavior.app"
-            BlueprintName = "CatSavior"
-            ReferencedContainer = "container:CatSavior.xcodeproj">
+            BuildableName = "PetSavior.app"
+            BlueprintName = "PetSavior"
+            ReferencedContainer = "container:PetSavior.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0CB0045C1E39E25200876F9C"
-            BuildableName = "CatSavior.app"
-            BlueprintName = "CatSavior"
-            ReferencedContainer = "container:CatSavior.xcodeproj">
+            BuildableName = "PetSavior.app"
+            BlueprintName = "PetSavior"
+            ReferencedContainer = "container:PetSavior.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

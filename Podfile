@@ -6,6 +6,6 @@ inhibit_all_warnings!
 
 use_frameworks!
 
-target “CatSavior” do
+target “PetSavior” do
 pod 'Alamofire', '~> 4.3'
 end

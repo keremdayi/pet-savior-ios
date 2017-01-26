@@ -7,72 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C03719E1E39F57600480C41 /* PetSaviorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C03719D1E39F57600480C41 /* PetSaviorTests.swift */; };
+		0C0371AC1E39F57E00480C41 /* PetSaviorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0371AB1E39F57E00480C41 /* PetSaviorUITests.swift */; };
 		0CB004611E39E25200876F9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB004601E39E25200876F9C /* AppDelegate.swift */; };
 		0CB004631E39E25200876F9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB004621E39E25200876F9C /* ViewController.swift */; };
 		0CB004661E39E25200876F9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB004641E39E25200876F9C /* Main.storyboard */; };
 		0CB004681E39E25200876F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB004671E39E25200876F9C /* Assets.xcassets */; };
 		0CB0046B1E39E25200876F9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB004691E39E25200876F9C /* LaunchScreen.storyboard */; };
-		0CB004761E39E25200876F9C /* CatSaviorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB004751E39E25200876F9C /* CatSaviorTests.swift */; };
-		0CB004811E39E25200876F9C /* CatSaviorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB004801E39E25200876F9C /* CatSaviorUITests.swift */; };
-		F3B8A8B59A238D7C42F0DDAA /* Pods_CatSavior.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A2BF07B397C2A254F124A7 /* Pods_CatSavior.framework */; };
+		5AF02514C1509AE38007D6A9 /* Pods_PetSavior.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B380AFE1F54832DA4662CC49 /* Pods_PetSavior.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0CB004721E39E25200876F9C /* PBXContainerItemProxy */ = {
+		0C0371A01E39F57600480C41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0CB004551E39E25200876F9C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0CB0045C1E39E25200876F9C;
-			remoteInfo = CatSavior;
+			remoteInfo = PetSavior;
 		};
-		0CB0047D1E39E25200876F9C /* PBXContainerItemProxy */ = {
+		0C0371AE1E39F57E00480C41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0CB004551E39E25200876F9C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0CB0045C1E39E25200876F9C;
-			remoteInfo = CatSavior;
+			remoteInfo = PetSavior;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CB0045D1E39E25200876F9C /* CatSavior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatSavior.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C03719B1E39F57600480C41 /* PetSaviorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetSaviorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C03719D1E39F57600480C41 /* PetSaviorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaviorTests.swift; sourceTree = "<group>"; };
+		0C03719F1E39F57600480C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C0371A91E39F57D00480C41 /* PetSaviorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetSaviorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0371AB1E39F57E00480C41 /* PetSaviorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaviorUITests.swift; sourceTree = "<group>"; };
+		0C0371AD1E39F57E00480C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CB0045D1E39E25200876F9C /* PetSavior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSavior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB004601E39E25200876F9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CB004621E39E25200876F9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0CB004651E39E25200876F9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CB004671E39E25200876F9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CB0046A1E39E25200876F9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CB0046C1E39E25200876F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CB004711E39E25200876F9C /* CatSaviorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatSaviorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CB004751E39E25200876F9C /* CatSaviorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSaviorTests.swift; sourceTree = "<group>"; };
-		0CB004771E39E25200876F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CB0047C1E39E25200876F9C /* CatSaviorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatSaviorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CB004801E39E25200876F9C /* CatSaviorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSaviorUITests.swift; sourceTree = "<group>"; };
-		0CB004821E39E25200876F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12A2BF07B397C2A254F124A7 /* Pods_CatSavior.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatSavior.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6ED221904900066782393941 /* Pods-CatSavior.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatSavior.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatSavior/Pods-CatSavior.debug.xcconfig"; sourceTree = "<group>"; };
-		70AD728790CBB312B63A70B2 /* Pods-CatSavior.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatSavior.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatSavior/Pods-CatSavior.release.xcconfig"; sourceTree = "<group>"; };
+		6ED221904900066782393941 /* Pods-PetSavior */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "Pods-PetSavior"; path = "Pods/Target Support Files/Pods-PetSavior"; sourceTree = "<group>"; };
+		70AD728790CBB312B63A70B2 /* Pods-PetSavior.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetSavior.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetSavior/Pods-PetSavior.release.xcconfig"; sourceTree = "<group>"; };
+		B380AFE1F54832DA4662CC49 /* Pods_PetSavior.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetSavior.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7A62E21E21B25855A8B8DA3 /* Pods-PetSavior.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetSavior.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetSavior/Pods-PetSavior.debug.xcconfig"; sourceTree = "<group>"; };
+		E1900E359301783D0461A530 /* Pods-PetSavior.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetSavior.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetSavior/Pods-PetSavior.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0C0371981E39F57600480C41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0371A61E39F57D00480C41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0CB0045A1E39E25200876F9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3B8A8B59A238D7C42F0DDAA /* Pods_CatSavior.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0CB0046E1E39E25200876F9C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0CB004791E39E25200876F9C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				5AF02514C1509AE38007D6A9 /* Pods_PetSavior.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,16 +86,35 @@
 			isa = PBXGroup;
 			children = (
 				12A2BF07B397C2A254F124A7 /* Pods_CatSavior.framework */,
+				B380AFE1F54832DA4662CC49 /* Pods_PetSavior.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C03719C1E39F57600480C41 /* PetSaviorTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C03719D1E39F57600480C41 /* PetSaviorTests.swift */,
+				0C03719F1E39F57600480C41 /* Info.plist */,
+			);
+			path = PetSaviorTests;
+			sourceTree = "<group>";
+		};
+		0C0371AA1E39F57E00480C41 /* PetSaviorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C0371AB1E39F57E00480C41 /* PetSaviorUITests.swift */,
+				0C0371AD1E39F57E00480C41 /* Info.plist */,
+			);
+			path = PetSaviorUITests;
 			sourceTree = "<group>";
 		};
 		0CB004541E39E25200876F9C = {
 			isa = PBXGroup;
 			children = (
-				0CB0045F1E39E25200876F9C /* CatSavior */,
-				0CB004741E39E25200876F9C /* CatSaviorTests */,
-				0CB0047F1E39E25200876F9C /* CatSaviorUITests */,
+				0CB0045F1E39E25200876F9C /* PetSavior */,
+				0C03719C1E39F57600480C41 /* PetSaviorTests */,
+				0C0371AA1E39F57E00480C41 /* PetSaviorUITests */,
 				0CB0045E1E39E25200876F9C /* Products */,
 				83E0F4EF61993C656906AA38 /* Pods */,
 				086C626EABE1AD703557705F /* Frameworks */,
@@ -102,14 +124,14 @@
 		0CB0045E1E39E25200876F9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0CB0045D1E39E25200876F9C /* CatSavior.app */,
-				0CB004711E39E25200876F9C /* CatSaviorTests.xctest */,
-				0CB0047C1E39E25200876F9C /* CatSaviorUITests.xctest */,
+				0CB0045D1E39E25200876F9C /* PetSavior.app */,
+				0C03719B1E39F57600480C41 /* PetSaviorTests.xctest */,
+				0C0371A91E39F57D00480C41 /* PetSaviorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0CB0045F1E39E25200876F9C /* CatSavior */ = {
+		0CB0045F1E39E25200876F9C /* PetSavior */ = {
 			isa = PBXGroup;
 			children = (
 				0CB004601E39E25200876F9C /* AppDelegate.swift */,
@@ -119,32 +141,16 @@
 				0CB004691E39E25200876F9C /* LaunchScreen.storyboard */,
 				0CB0046C1E39E25200876F9C /* Info.plist */,
 			);
-			path = CatSavior;
-			sourceTree = "<group>";
-		};
-		0CB004741E39E25200876F9C /* CatSaviorTests */ = {
-			isa = PBXGroup;
-			children = (
-				0CB004751E39E25200876F9C /* CatSaviorTests.swift */,
-				0CB004771E39E25200876F9C /* Info.plist */,
-			);
-			path = CatSaviorTests;
-			sourceTree = "<group>";
-		};
-		0CB0047F1E39E25200876F9C /* CatSaviorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0CB004801E39E25200876F9C /* CatSaviorUITests.swift */,
-				0CB004821E39E25200876F9C /* Info.plist */,
-			);
-			path = CatSaviorUITests;
+			path = PetSavior;
 			sourceTree = "<group>";
 		};
 		83E0F4EF61993C656906AA38 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6ED221904900066782393941 /* Pods-CatSavior.debug.xcconfig */,
-				70AD728790CBB312B63A70B2 /* Pods-CatSavior.release.xcconfig */,
+				6ED221904900066782393941 /* Pods-PetSavior */,
+				70AD728790CBB312B63A70B2 /* Pods-PetSavior.release.xcconfig */,
+				B7A62E21E21B25855A8B8DA3 /* Pods-PetSavior.debug.xcconfig */,
+				E1900E359301783D0461A530 /* Pods-PetSavior.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -152,9 +158,45 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0CB0045C1E39E25200876F9C /* CatSavior */ = {
+		0C03719A1E39F57600480C41 /* PetSaviorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CB004851E39E25200876F9C /* Build configuration list for PBXNativeTarget "CatSavior" */;
+			buildConfigurationList = 0C0371A41E39F57600480C41 /* Build configuration list for PBXNativeTarget "PetSaviorTests" */;
+			buildPhases = (
+				0C0371971E39F57600480C41 /* Sources */,
+				0C0371981E39F57600480C41 /* Frameworks */,
+				0C0371991E39F57600480C41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C0371A11E39F57600480C41 /* PBXTargetDependency */,
+			);
+			name = PetSaviorTests;
+			productName = PetSaviorTests;
+			productReference = 0C03719B1E39F57600480C41 /* PetSaviorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C0371A81E39F57D00480C41 /* PetSaviorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0371B01E39F57E00480C41 /* Build configuration list for PBXNativeTarget "PetSaviorUITests" */;
+			buildPhases = (
+				0C0371A51E39F57D00480C41 /* Sources */,
+				0C0371A61E39F57D00480C41 /* Frameworks */,
+				0C0371A71E39F57D00480C41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C0371AF1E39F57E00480C41 /* PBXTargetDependency */,
+			);
+			name = PetSaviorUITests;
+			productName = PetSaviorUITests;
+			productReference = 0C0371A91E39F57D00480C41 /* PetSaviorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		0CB0045C1E39E25200876F9C /* PetSavior */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CB004851E39E25200876F9C /* Build configuration list for PBXNativeTarget "PetSavior" */;
 			buildPhases = (
 				5DF425959FEFCDB67E17F7B2 /* [CP] Check Pods Manifest.lock */,
 				0CB004591E39E25200876F9C /* Sources */,
@@ -167,46 +209,10 @@
 			);
 			dependencies = (
 			);
-			name = CatSavior;
+			name = PetSavior;
 			productName = CatSavior;
-			productReference = 0CB0045D1E39E25200876F9C /* CatSavior.app */;
+			productReference = 0CB0045D1E39E25200876F9C /* PetSavior.app */;
 			productType = "com.apple.product-type.application";
-		};
-		0CB004701E39E25200876F9C /* CatSaviorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0CB004881E39E25200876F9C /* Build configuration list for PBXNativeTarget "CatSaviorTests" */;
-			buildPhases = (
-				0CB0046D1E39E25200876F9C /* Sources */,
-				0CB0046E1E39E25200876F9C /* Frameworks */,
-				0CB0046F1E39E25200876F9C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0CB004731E39E25200876F9C /* PBXTargetDependency */,
-			);
-			name = CatSaviorTests;
-			productName = CatSaviorTests;
-			productReference = 0CB004711E39E25200876F9C /* CatSaviorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0CB0047B1E39E25200876F9C /* CatSaviorUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0CB0048B1E39E25200876F9C /* Build configuration list for PBXNativeTarget "CatSaviorUITests" */;
-			buildPhases = (
-				0CB004781E39E25200876F9C /* Sources */,
-				0CB004791E39E25200876F9C /* Frameworks */,
-				0CB0047A1E39E25200876F9C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0CB0047E1E39E25200876F9C /* PBXTargetDependency */,
-			);
-			name = CatSaviorUITests;
-			productName = CatSaviorUITests;
-			productReference = 0CB0047C1E39E25200876F9C /* CatSaviorUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -218,26 +224,26 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = ACI;
 				TargetAttributes = {
+					0C03719A1E39F57600480C41 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VF89SMT8TU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0CB0045C1E39E25200876F9C;
+					};
+					0C0371A81E39F57D00480C41 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VF89SMT8TU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0CB0045C1E39E25200876F9C;
+					};
 					0CB0045C1E39E25200876F9C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = VF89SMT8TU;
 						ProvisioningStyle = Automatic;
 					};
-					0CB004701E39E25200876F9C = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VF89SMT8TU;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 0CB0045C1E39E25200876F9C;
-					};
-					0CB0047B1E39E25200876F9C = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VF89SMT8TU;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 0CB0045C1E39E25200876F9C;
-					};
 				};
 			};
-			buildConfigurationList = 0CB004581E39E25200876F9C /* Build configuration list for PBXProject "CatSavior" */;
+			buildConfigurationList = 0CB004581E39E25200876F9C /* Build configuration list for PBXProject "PetSavior" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -250,14 +256,28 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0CB0045C1E39E25200876F9C /* CatSavior */,
-				0CB004701E39E25200876F9C /* CatSaviorTests */,
-				0CB0047B1E39E25200876F9C /* CatSaviorUITests */,
+				0CB0045C1E39E25200876F9C /* PetSavior */,
+				0C03719A1E39F57600480C41 /* PetSaviorTests */,
+				0C0371A81E39F57D00480C41 /* PetSaviorUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0C0371991E39F57600480C41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0371A71E39F57D00480C41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0CB0045B1E39E25200876F9C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,20 +285,6 @@
 				0CB0046B1E39E25200876F9C /* LaunchScreen.storyboard in Resources */,
 				0CB004681E39E25200876F9C /* Assets.xcassets in Resources */,
 				0CB004661E39E25200876F9C /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0CB0046F1E39E25200876F9C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0CB0047A1E39E25200876F9C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +303,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatSavior/Pods-CatSavior-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetSavior/Pods-PetSavior-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5DF425959FEFCDB67E17F7B2 /* [CP] Check Pods Manifest.lock */ = {
@@ -327,12 +333,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatSavior/Pods-CatSavior-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetSavior/Pods-PetSavior-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0C0371971E39F57600480C41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C03719E1E39F57600480C41 /* PetSaviorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C0371A51E39F57D00480C41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0371AC1E39F57E00480C41 /* PetSaviorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0CB004591E39E25200876F9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,34 +364,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0CB0046D1E39E25200876F9C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0CB004761E39E25200876F9C /* CatSaviorTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0CB004781E39E25200876F9C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0CB004811E39E25200876F9C /* CatSaviorUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0CB004731E39E25200876F9C /* PBXTargetDependency */ = {
+		0C0371A11E39F57600480C41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0CB0045C1E39E25200876F9C /* CatSavior */;
-			targetProxy = 0CB004721E39E25200876F9C /* PBXContainerItemProxy */;
+			target = 0CB0045C1E39E25200876F9C /* PetSavior */;
+			targetProxy = 0C0371A01E39F57600480C41 /* PBXContainerItemProxy */;
 		};
-		0CB0047E1E39E25200876F9C /* PBXTargetDependency */ = {
+		0C0371AF1E39F57E00480C41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0CB0045C1E39E25200876F9C /* CatSavior */;
-			targetProxy = 0CB0047D1E39E25200876F9C /* PBXContainerItemProxy */;
+			target = 0CB0045C1E39E25200876F9C /* PetSavior */;
+			targetProxy = 0C0371AE1E39F57E00480C41 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,6 +399,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0C0371A21E39F57600480C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VF89SMT8TU;
+				INFOPLIST_FILE = PetSaviorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aci.k12.PetSaviorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetSavior.app/PetSavior";
+			};
+			name = Debug;
+		};
+		0C0371A31E39F57600480C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VF89SMT8TU;
+				INFOPLIST_FILE = PetSaviorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aci.k12.PetSaviorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetSavior.app/PetSavior";
+			};
+			name = Release;
+		};
+		0C0371B11E39F57E00480C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VF89SMT8TU;
+				INFOPLIST_FILE = PetSaviorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aci.k12.PetSaviorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PetSavior;
+			};
+			name = Debug;
+		};
+		0C0371B21E39F57E00480C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VF89SMT8TU;
+				INFOPLIST_FILE = PetSaviorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aci.k12.PetSaviorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PetSavior;
+			};
+			name = Release;
+		};
 		0CB004831E39E25200876F9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -488,13 +548,14 @@
 		};
 		0CB004861E39E25200876F9C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6ED221904900066782393941 /* Pods-CatSavior.debug.xcconfig */;
+			baseConfigurationReference = B7A62E21E21B25855A8B8DA3 /* Pods-PetSavior.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VF89SMT8TU;
-				INFOPLIST_FILE = CatSavior/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PetSavior/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aci.k12.CatSavior;
+				PRODUCT_BUNDLE_IDENTIFIER = aci.k12.petsavior;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -502,80 +563,39 @@
 		};
 		0CB004871E39E25200876F9C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70AD728790CBB312B63A70B2 /* Pods-CatSavior.release.xcconfig */;
+			baseConfigurationReference = E1900E359301783D0461A530 /* Pods-PetSavior.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VF89SMT8TU;
-				INFOPLIST_FILE = CatSavior/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PetSavior/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aci.k12.CatSavior;
+				PRODUCT_BUNDLE_IDENTIFIER = aci.k12.petsavior;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		0CB004891E39E25200876F9C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = VF89SMT8TU;
-				INFOPLIST_FILE = CatSaviorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aci.k12.CatSaviorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatSavior.app/CatSavior";
-			};
-			name = Debug;
-		};
-		0CB0048A1E39E25200876F9C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = VF89SMT8TU;
-				INFOPLIST_FILE = CatSaviorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aci.k12.CatSaviorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatSavior.app/CatSavior";
-			};
-			name = Release;
-		};
-		0CB0048C1E39E25200876F9C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = VF89SMT8TU;
-				INFOPLIST_FILE = CatSaviorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aci.k12.CatSaviorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = CatSavior;
-			};
-			name = Debug;
-		};
-		0CB0048D1E39E25200876F9C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = VF89SMT8TU;
-				INFOPLIST_FILE = CatSaviorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aci.k12.CatSaviorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = CatSavior;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0CB004581E39E25200876F9C /* Build configuration list for PBXProject "CatSavior" */ = {
+		0C0371A41E39F57600480C41 /* Build configuration list for PBXNativeTarget "PetSaviorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0371A21E39F57600480C41 /* Debug */,
+				0C0371A31E39F57600480C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0C0371B01E39F57E00480C41 /* Build configuration list for PBXNativeTarget "PetSaviorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0371B11E39F57E00480C41 /* Debug */,
+				0C0371B21E39F57E00480C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0CB004581E39E25200876F9C /* Build configuration list for PBXProject "PetSavior" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CB004831E39E25200876F9C /* Debug */,
@@ -584,29 +604,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0CB004851E39E25200876F9C /* Build configuration list for PBXNativeTarget "CatSavior" */ = {
+		0CB004851E39E25200876F9C /* Build configuration list for PBXNativeTarget "PetSavior" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CB004861E39E25200876F9C /* Debug */,
 				0CB004871E39E25200876F9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		0CB004881E39E25200876F9C /* Build configuration list for PBXNativeTarget "CatSaviorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0CB004891E39E25200876F9C /* Debug */,
-				0CB0048A1E39E25200876F9C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		0CB0048B1E39E25200876F9C /* Build configuration list for PBXNativeTarget "CatSaviorUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0CB0048C1E39E25200876F9C /* Debug */,
-				0CB0048D1E39E25200876F9C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

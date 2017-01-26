@@ -1,0 +1,6 @@
+framework module Pods_PetSavior {
+  umbrella header "Pods-PetSavior-umbrella.h"
+
+  export *
+  module * { export * }
+}
