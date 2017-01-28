@@ -10,9 +10,16 @@ import UIKit
 
 class animalDetailViewController: UIViewController {
 
+    @IBOutlet weak var animalDetailTitleTextView: UITextView!
+    @IBOutlet weak var animalDetailDescriptionTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.animalDetailTitleTextView.layer.borderWidth = 1
+        self.animalDetailTitleTextView.layer.borderColor = UIColor.lightGray.cgColor
+        self.animalDetailTitleTextView.layer.cornerRadius = 4
+        self.animalDetailDescriptionTextView.layer.borderWidth = 1
+        self.animalDetailDescriptionTextView.layer.borderColor = UIColor.lightGray.cgColor
+        self.animalDetailDescriptionTextView.layer.cornerRadius = 4
         // Do any additional setup after loading the view.
     }
 

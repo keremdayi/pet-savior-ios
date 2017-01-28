@@ -26,19 +26,20 @@ class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITable
         super.viewDidLoad()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 80
-        manager.delegate = self
-        manager.requestLocation()
+//        manager.delegate = self
+//        manager.requestLocation()
     }
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let userLocation:CLLocation = locations[0]
-        let longitude = userLocation.coordinate.longitude
-        let latitude = userLocation.coordinate.latitude
-        Alamofire.request("http://api.petsavior.com/posts/nearby", method: .get, parameters: ["longitude" :longitude, "latitude": latitude, "range": "1"]).responseJSON { (response) in
-            
-        }
-    }
-   
-    
+//    
+//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        let userLocation:CLLocation = locations[0]
+//        let longitude = userLocation.coordinate.longitude
+//        let latitude = userLocation.coordinate.latitude
+//        Alamofire.request("http://api.petsavior.com/posts/nearby", method: .get, parameters: ["longitude" :longitude, "latitude": latitude, "range": "1"]).responseJSON { (response) in
+//            
+//        }
+//    }
+//   
+//    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 100
     }
@@ -58,14 +59,16 @@ class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITable
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "postCell" {
+                _ = (segue.destination as! UINavigationController).viewControllers[0] as! animalDetailViewController
+        }
     }
-    */
-
+    
 }

@@ -14,6 +14,7 @@
 		0C0371B81E3A0B7C00480C41 /* cevremdekilerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0371B71E3A0B7C00480C41 /* cevremdekilerTableViewController.swift */; };
 		0C0371BA1E3A0E4F00480C41 /* animalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0371B91E3A0E4F00480C41 /* animalDetailViewController.swift */; };
 		0C0371BC1E3A14A500480C41 /* postTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0371BB1E3A14A500480C41 /* postTableViewCell.swift */; };
+		0C266FE71E3B4DAE001F6C6D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C266FE61E3B4DAE001F6C6D /* MapKit.framework */; };
 		0CB004611E39E25200876F9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB004601E39E25200876F9C /* AppDelegate.swift */; };
 		0CB004631E39E25200876F9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB004621E39E25200876F9C /* ViewController.swift */; };
 		0CB004661E39E25200876F9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB004641E39E25200876F9C /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		0C0371B71E3A0B7C00480C41 /* cevremdekilerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cevremdekilerTableViewController.swift; sourceTree = "<group>"; };
 		0C0371B91E3A0E4F00480C41 /* animalDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animalDetailViewController.swift; sourceTree = "<group>"; };
 		0C0371BB1E3A14A500480C41 /* postTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = postTableViewCell.swift; sourceTree = "<group>"; };
+		0C266FE61E3B4DAE001F6C6D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0CB0045D1E39E25200876F9C /* PetSavior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSavior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB004601E39E25200876F9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CB004621E39E25200876F9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C266FE71E3B4DAE001F6C6D /* MapKit.framework in Frameworks */,
 				5AF02514C1509AE38007D6A9 /* Pods_PetSavior.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +98,7 @@
 		086C626EABE1AD703557705F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C266FE61E3B4DAE001F6C6D /* MapKit.framework */,
 				12A2BF07B397C2A254F124A7 /* Pods_CatSavior.framework */,
 				B380AFE1F54832DA4662CC49 /* Pods_PetSavior.framework */,
 			);
@@ -255,6 +259,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = VF89SMT8TU;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
