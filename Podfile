@@ -8,4 +8,5 @@ use_frameworks!
 
 target “PetSavior” do
 pod 'Alamofire', '~> 4.3'
+pod 'SwiftyJSON'
 end

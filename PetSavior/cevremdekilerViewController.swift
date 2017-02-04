@@ -9,8 +9,10 @@
 import UIKit
 import CoreLocation
 import Alamofire
+import SwiftyJSON
 
 class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITableViewDataSource, CLLocationManagerDelegate{
+    var resp : JSON?
     
     let manager = CLLocationManager()
     
@@ -26,22 +28,25 @@ class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITable
         super.viewDidLoad()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 80
-//        manager.delegate = self
-//        manager.requestLocation()
+        manager.delegate = self
+        manager.requestLocation()
     }
-//    
-//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        let userLocation:CLLocation = locations[0]
-//        let longitude = userLocation.coordinate.longitude
-//        let latitude = userLocation.coordinate.latitude
-//        Alamofire.request("http://api.petsavior.com/posts/nearby", method: .get, parameters: ["longitude" :longitude, "latitude": latitude, "range": "1"]).responseJSON { (response) in
-//            
-//        }
-//    }
-//   
-//    
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let userLocation:CLLocation = locations[0]
+        let longitude = userLocation.coordinate.longitude
+        let latitude = userLocation.coordinate.latitude
+        Alamofire.request("http://petsavior.gokhanakkurt.com/posts/nearby", method: .get, parameters: ["longitude" : longitude, "latitude": latitude, "range": "1000"]).responseJSON { (response) in
+            self.resp = JSON(response)
+        }
+    }
+   
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        if self.resp != nil {
+            return self.resp!["result"].count
+        }
+        return 0
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
@@ -52,8 +57,10 @@ class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITable
         // create a new cell if needed or reuse an old one
         let cell:postTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! postTableViewCell
         // set the text from the data model
-        //cell.textLabel?.text = self.x[indexPath.row]
-        cell.cellLabel.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+        if self.resp != nil{
+            let data = self.resp?["result"][indexPath.row]
+            cell.textLabel?.text = data?["title"].stringValue
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
