@@ -11,7 +11,7 @@ import CoreLocation
 import Alamofire
 import SwiftyJSON
 import SDWebImage
-
+var detail : JSON?
 class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITableViewDataSource, CLLocationManagerDelegate{
     var resp : JSON?
     
@@ -41,7 +41,7 @@ class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITable
         let userLocation:CLLocation = locations[0]
         let longitude = userLocation.coordinate.longitude
         let latitude = userLocation.coordinate.latitude
-        Alamofire.request("http://petsavior.gokhanakkurt.com/posts/nearby", method: .get, parameters: ["longitude" : longitude, "latitude": latitude, "range": 2]).responseJSON { (result) in
+        Alamofire.request("http://petsavior.gokhanakkurt.com/posts/nearby", method: .get, parameters: ["longitude" : longitude, "latitude": latitude, "range": 1000]).responseJSON { (result) in
             if let data = result.data{
                 self.resp = JSON(data)
                 self.tableView.reloadData()
@@ -79,7 +79,7 @@ class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITable
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        detail = self.resp?["result"][indexPath.row]
     }
     
     // MARK: - Navigation

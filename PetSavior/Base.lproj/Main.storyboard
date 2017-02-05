@@ -236,6 +236,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="animalDetailDescriptionTextView" destination="jcT-qW-buh" id="tZw-yd-KWG"/>
+                        <outlet property="animalDetailImageView" destination="Mvb-M4-zyH" id="7gD-vY-1N9"/>
+                        <outlet property="animalDetailMapView" destination="5KU-bH-C4a" id="PLl-20-w3t"/>
                         <outlet property="animalDetailTitleTextView" destination="wQv-cP-nGu" id="3fo-64-4Az"/>
                     </connections>
                 </viewController>

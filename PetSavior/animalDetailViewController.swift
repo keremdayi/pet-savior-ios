@@ -7,9 +7,11 @@
 //
 
 import UIKit
-
+import CoreLocation
 class animalDetailViewController: UIViewController {
 
+    @IBOutlet weak var animalDetailMapView: MKMapView!
+    @IBOutlet weak var animalDetailImageView: UIImageView!
     @IBOutlet weak var animalDetailTitleTextView: UITextView!
     @IBOutlet weak var animalDetailDescriptionTextView: UITextView!
     override func viewDidLoad() {
@@ -20,6 +22,10 @@ class animalDetailViewController: UIViewController {
         self.animalDetailDescriptionTextView.layer.borderWidth = 1
         self.animalDetailDescriptionTextView.layer.borderColor = UIColor.lightGray.cgColor
         self.animalDetailDescriptionTextView.layer.cornerRadius = 4
+        self.animalDetailTitleTextView.text = detail?["title"].stringValue
+        self.animalDetailDescriptionTextView.text = detail?["description"].stringValue
+        self.animalDetailImageView.sd_setImage(with: URL(string: (detail?["image"].stringValue)!))
+        self.animalDetailMapView
         // Do any additional setup after loading the view.
     }
 
