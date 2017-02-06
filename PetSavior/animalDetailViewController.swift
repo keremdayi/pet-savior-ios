@@ -7,13 +7,14 @@
 //
 
 import UIKit
-import CoreLocation
+import MapKit
 class animalDetailViewController: UIViewController {
 
     @IBOutlet weak var animalDetailMapView: MKMapView!
     @IBOutlet weak var animalDetailImageView: UIImageView!
     @IBOutlet weak var animalDetailTitleTextView: UITextView!
     @IBOutlet weak var animalDetailDescriptionTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.animalDetailTitleTextView.layer.borderWidth = 1
@@ -25,7 +26,13 @@ class animalDetailViewController: UIViewController {
         self.animalDetailTitleTextView.text = detail?["title"].stringValue
         self.animalDetailDescriptionTextView.text = detail?["description"].stringValue
         self.animalDetailImageView.sd_setImage(with: URL(string: (detail?["image"].stringValue)!))
-        self.animalDetailMapView
+        
+        let annotation = MKPointAnnotation()
+        annotation.title = detail?["title"].stringValue
+        let coordinate = CLLocationCoordinate2D(latitude : (detail?["latitude"].doubleValue)!,
+                                                longitude : (detail?["longitude"].doubleValue)!)
+        annotation.coordinate = coordinate
+        animalDetailMapView.addAnnotation(annotation)
         // Do any additional setup after loading the view.
     }
 

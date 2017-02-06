@@ -30,7 +30,7 @@
         <!--Tümü-->
         <scene sceneID="oCh-5a-lPi">
             <objects>
-                <viewController id="AfL-cv-fPz" sceneMemberID="viewController">
+                <viewController id="AfL-cv-fPz" customClass="tumuViewController" customModule="PetSavior" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eS3-LZ-6MM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="471-hc-wHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1726" y="379"/>
+            <point key="canvasLocation" x="1725.5999999999999" y="378.26086956521743"/>
         </scene>
         <!--add-->
         <scene sceneID="C5q-16-z6x">
@@ -356,7 +356,7 @@
         <image name="icon-nearby" width="21" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aT6-aF-v4m"/>
-        <segue reference="V34-MP-i2z"/>
+        <segue reference="1ck-RO-gGl"/>
+        <segue reference="SkK-YL-naH"/>
     </inferredMetricsTieBreakers>
 </document>

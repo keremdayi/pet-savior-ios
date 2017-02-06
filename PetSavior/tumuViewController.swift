@@ -1,19 +1,18 @@
 //
-//  cevremdekilerViewController.swift
+//  tumuViewController.swift
 //  PetSavior
 //
-//  Created by kerem on 26/01/2017.
+//  Created by kerem on 06/02/2017.
 //  Copyright © 2017 ACI. All rights reserved.
 //
 
 import UIKit
-import CoreLocation
-import Alamofire
 import SwiftyJSON
 import SDWebImage
+import Alamofire
+import CoreLocation
 
-var detail : JSON?
-class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITableViewDataSource, CLLocationManagerDelegate{
+class tumuViewController: UIViewController, UITableViewDelegate,UITableViewDataSource, CLLocationManagerDelegate{
     var resp : JSON?
     
     let manager = CLLocationManager()
@@ -22,16 +21,11 @@ class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITable
     
     @IBOutlet var tableView: UITableView!
     
-    @IBAction func unwindToNearby(segue:UIStoryboardSegue) {
-    
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 80
         manager.delegate = self
-        manager.requestWhenInUseAuthorization()
         manager.requestLocation()
     }
     
@@ -42,7 +36,7 @@ class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITable
         let userLocation:CLLocation = locations[0]
         let longitude = userLocation.coordinate.longitude
         let latitude = userLocation.coordinate.latitude
-        Alamofire.request("http://petsavior.gokhanakkurt.com/posts/nearby", method: .get, parameters: ["longitude" : longitude, "latitude": latitude, "range": 3]).responseJSON { (result) in
+        Alamofire.request("http://petsavior.gokhanakkurt.com/posts/nearby", method: .get, parameters: ["longitude" : longitude, "latitude": latitude, "range": 100]).responseJSON { (result) in
             if let data = result.data{
                 self.resp = JSON(data)
                 self.tableView.reloadData()
@@ -54,7 +48,7 @@ class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITable
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("failed location info")
     }
-   
+    
     // MARK: - UITableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -84,13 +78,13 @@ class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITable
     }
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if segue.identifier == "postCell" {
-                _ = (segue.destination as! UINavigationController).viewControllers[0] as! animalDetailViewController
+            _ = (segue.destination as! UINavigationController).viewControllers[0] as! animalDetailViewController
         }
     }
     
