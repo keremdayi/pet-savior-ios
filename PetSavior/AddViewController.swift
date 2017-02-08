@@ -49,7 +49,7 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         print("failed location info")
     }
     
-    @IBAction func photoButton(sender: AnyObject){
+    @IBAction func photoButton(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
@@ -94,7 +94,7 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     
     //MARK: Delegates
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        self.image = info[UIImagePickerControllerOriginalImage]
+        self.image = info[UIImagePickerControllerOriginalImage] as? UIImage
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

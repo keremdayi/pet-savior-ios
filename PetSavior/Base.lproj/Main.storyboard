@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NY2-r7-Cr7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NY2-r7-Cr7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -103,7 +103,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="leq-l1-gRg">
-                                <rect key="frame" x="27.5" y="273" width="319" height="30"/>
+                                <rect key="frame" x="28" y="273" width="319" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -116,11 +116,11 @@
                                 </constraints>
                                 <state key="normal" image="icon-add-photo"/>
                                 <connections>
-                                    <action selector="photoButtonWithSender:" destination="OQ5-9f-TGo" eventType="touchDown" id="aS6-4F-kOU"/>
+                                    <action selector="photoButton:" destination="OQ5-9f-TGo" eventType="touchUpInside" id="ILH-dQ-CVq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTj-Hf-1zz">
-                                <rect key="frame" x="27.5" y="458" width="319" height="45"/>
+                                <rect key="frame" x="28" y="458" width="319" height="45"/>
                                 <color key="backgroundColor" red="0.94509803921568625" green="0.5607843137254902" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="9oX-l6-AGv"/>
@@ -166,7 +166,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="DescriptionTextView" destination="Nqy-ad-WgX" id="jb9-Pu-kfy"/>
-                        <outlet property="addImageButton" destination="niu-2a-f4z" id="WQe-oB-HKy"/>
+                        <outlet property="addImageButton" destination="niu-2a-f4z" id="Mph-v3-uDa"/>
                         <outlet property="descriptionTextView" destination="Nqy-ad-WgX" id="YgV-x5-g1i"/>
                         <outlet property="saveButton" destination="iTj-Hf-1zz" id="8DF-nh-v4c"/>
                         <outlet property="titleTextField" destination="leq-l1-gRg" id="LgU-ua-ZZ9"/>
