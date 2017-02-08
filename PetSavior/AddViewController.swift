@@ -62,9 +62,9 @@ class AddViewController: UIViewController,UIImagePickerControllerDelegate, UINav
             }
             
             for (key, value) in ["latitude": self.latitude,"longitude" : self.longitude, "title" : self.titleTextField.text, "description" : self.descriptionTextView.text] {
-                if let data = value.data(using: String.Encoding.utf8){
-                    multipartFormData.append(data, withName: key)
-                }
+//                if let data = value.data(using: String.Encoding.utf8){
+//                    multipartFormData.append(data, withName: key)
+//                }
             }
             
         }, to: "http://petsavior.gokhanakkurt.com/posts", encodingCompletion: { (encodingCompletion) in
