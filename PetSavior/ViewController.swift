@@ -24,6 +24,5 @@ class ViewController: UIViewController{
     @IBAction func buttonTouch(_ sender: Any) {
         testButton.titleLabel?.text = "kerem"
     }
-
 }
 

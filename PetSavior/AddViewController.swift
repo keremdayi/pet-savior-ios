@@ -24,7 +24,9 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var saveButton: UIButton!
-    
+    override dynamic func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.descriptionTextView.layer.borderWidth = 1.0
@@ -61,7 +63,7 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     
     @IBAction func post(){
         // TODO: Validation required.
-        
+        print("posting...")
         let params : [String : AnyObject] = ["latitude": (self.latitude as AnyObject),"longitude" : (self.longitude as AnyObject), "title" : (self.titleTextField.text as AnyObject), "description" : (self.descriptionTextView.text as AnyObject)]
         
         Alamofire.upload(multipartFormData: { (multipartFormData) in
@@ -95,9 +97,12 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
     //MARK: Delegates
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         self.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        dismiss(animated: true, completion: nil)
+        print("yes")
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.image = nil
+        print("no")
     }
 }
