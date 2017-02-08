@@ -15,7 +15,7 @@ class AddViewController: UIViewController,UIImagePickerControllerDelegate, UINav
     let manager = CLLocationManager()
     var latitude : Any?
     var longitude : Any?
-    var image : UIImage?
+    var image : Any?
     @IBOutlet weak var addImageButton: UIButton!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var descriptionTextView: UITextView!
@@ -52,12 +52,35 @@ class AddViewController: UIViewController,UIImagePickerControllerDelegate, UINav
             imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
             imagePicker.allowsEditing = false
             self.present(imagePicker, animated: true, completion: nil)
-            self.image = UIImageJPEGRepresentation(imagePicker)
+            self.image = imagePicker
         }
     }
     @IBAction func post(){
-        Alamofire.upload(image, to : "http://petsavior.gokhanakkurt.com/posts", parameters : ["longitude" : self.longitude, "latitude" : self.latitude, "title" : titleTextField.text,"description" : descriptionTextView.text]){ response in
-            debugPrint(response)
-        }
+        Alamofire.upload(multipartFormData: { (multipartFormData) in
+            if let imageData = UIImageJPEGRepresentation(self.image as! UIImage, 0.5) {
+                multipartFormData.append(imageData, withName: "file", fileName: "image", mimeType: "image/png")
+            }
+            
+            for (key, value) in ["latitude": self.latitude,"longitude" : self.longitude, "title" : self.titleTextField.text, "description" : self.descriptionTextView.text] {
+                if let data = value.data(using: String.Encoding.utf8){
+                    multipartFormData.append(data, withName: key)
+                }
+            }
+            
+        }, to: "http://petsavior.gokhanakkurt.com/posts", encodingCompletion: { (encodingCompletion) in
+            switch encodingCompletion {
+            case .success(let upload, _, _):
+                
+                upload.response(completionHandler: { (result) in
+                    if let anError = result.error{
+                        
+                    }else{
+                        
+                    }
+                })
+            case .failure(_):
+                break
+            }
+        })
     }
 }
