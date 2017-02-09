@@ -16,7 +16,6 @@
 		0C266FE71E3B4DAE001F6C6D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C266FE61E3B4DAE001F6C6D /* MapKit.framework */; };
 		0C606BD91E48EC9C00163FBD /* tumuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C606BD81E48EC9C00163FBD /* tumuViewController.swift */; };
 		0CB004611E39E25200876F9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB004601E39E25200876F9C /* AppDelegate.swift */; };
-		0CB004631E39E25200876F9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB004621E39E25200876F9C /* ViewController.swift */; };
 		0CB004661E39E25200876F9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB004641E39E25200876F9C /* Main.storyboard */; };
 		0CB004681E39E25200876F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB004671E39E25200876F9C /* Assets.xcassets */; };
 		0CB0046B1E39E25200876F9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB004691E39E25200876F9C /* LaunchScreen.storyboard */; };
@@ -55,7 +54,6 @@
 		0C606BD81E48EC9C00163FBD /* tumuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tumuViewController.swift; sourceTree = "<group>"; };
 		0CB0045D1E39E25200876F9C /* PetSavior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSavior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB004601E39E25200876F9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0CB004621E39E25200876F9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0CB004651E39E25200876F9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CB004671E39E25200876F9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CB0046A1E39E25200876F9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				0CB004601E39E25200876F9C /* AppDelegate.swift */,
-				0CB004621E39E25200876F9C /* ViewController.swift */,
 				0CB004641E39E25200876F9C /* Main.storyboard */,
 				0CB004671E39E25200876F9C /* Assets.xcassets */,
 				0CB004691E39E25200876F9C /* LaunchScreen.storyboard */,
@@ -383,7 +380,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CB004631E39E25200876F9C /* ViewController.swift in Sources */,
 				0CB004611E39E25200876F9C /* AppDelegate.swift in Sources */,
 				0C0371BA1E3A0E4F00480C41 /* animalDetailViewController.swift in Sources */,
 				0C0371BC1E3A14A500480C41 /* postTableViewCell.swift in Sources */,

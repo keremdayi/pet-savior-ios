@@ -8,25 +8,28 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 import CoreLocation
+import SVProgressHUD
 
 class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
     
     let manager = CLLocationManager()
     
-    var latitude : Double?
+    var latitude : String?
     
-    var longitude : Double?
+    var longitude : String?
     
     var image : UIImage?
     
     @IBOutlet weak var addImageButton: UIButton!
+    
     @IBOutlet weak var titleTextField: UITextField!
+    
     @IBOutlet weak var descriptionTextView: UITextView!
+    
     @IBOutlet weak var saveButton: UIButton!
-    override dynamic func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.descriptionTextView.layer.borderWidth = 1.0
@@ -40,11 +43,15 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         manager.requestLocation()
     }
     
+    override dynamic func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print("received location info")
         let userLocation:CLLocation = locations[0]
-        self.latitude = userLocation.coordinate.latitude
-        self.longitude = userLocation.coordinate.longitude
+        self.latitude = String(format:"%lf", arguments:[userLocation.coordinate.latitude])
+        self.longitude = String(format:"%lf", arguments:[userLocation.coordinate.longitude])
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -61,37 +68,53 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         }
     }
     
+    @IBAction func backButtonDidTouch(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func post(){
-        // TODO: Validation required.
-        print("posting...")
-        let params : [String : AnyObject] = ["latitude": (self.latitude as AnyObject),"longitude" : (self.longitude as AnyObject), "title" : (self.titleTextField.text as AnyObject), "description" : (self.descriptionTextView.text as AnyObject)]
-        
-        Alamofire.upload(multipartFormData: { (multipartFormData) in
-            if let imageData = UIImageJPEGRepresentation(self.image!, 0.5) {
-                multipartFormData.append(imageData, withName: "file", fileName: "image", mimeType: "image/png")
-            }
+        if  let latitude = self.latitude,
+            let longitude = self.longitude,
+            let title = self.titleTextField.text,
+            let description = self.descriptionTextView.text, !title.isEmpty, !description.isEmpty{
             
-            for (key, value) in params{
-                if let data = value.data(using: String.Encoding.utf8.rawValue){
-                    multipartFormData.append(data, withName: key)
+            SVProgressHUD.show()
+            let params : [String : String] = ["latitude": latitude, "longitude" : longitude, "title" : title, "description" : description]
+            
+            Alamofire.upload(multipartFormData: { (multipartFormData) in
+                if let imageData = UIImageJPEGRepresentation(self.image!, 0.3) {
+                    multipartFormData.append(imageData, withName: "image", fileName: "image.jpg", mimeType: "image/png")
                 }
-            }
-            
-        }, to: "http://petsavior.gokhanakkurt.com/posts", encodingCompletion: { (encodingCompletion) in
-            switch encodingCompletion {
-            case .success(let upload, _, _):
                 
-                upload.response(completionHandler: { (result) in
-                    if let _ = result.error{
-                        // error
-                    }else{
-                        // succeeded
+                for (key, value) in params{
+                    if let data = value.data(using: String.Encoding.utf8){
+                        multipartFormData.append(data, withName: key)
                     }
-                })
-            case .failure(_):
-                break
-            }
-        })
+                }
+                
+            }, to: "http://petsavior.gokhanakkurt.com/posts", encodingCompletion: { (encodingCompletion) in
+                switch encodingCompletion {
+                case .success(let upload, _, _):
+                    
+                    upload.response(completionHandler: { (result) in
+                        SVProgressHUD.dismiss()
+                        if let error = result.error{
+                            // error
+                            print(error)
+                        }else{
+                            // succeeded
+                            print(result.response!)
+                            if let data = result.data{
+                                self.dismiss(animated: true, completion: nil)
+                            }
+                        }
+                    })
+                case .failure(_):
+                    break
+                }
+            })
+        }
+        
     }
     
     //MARK: Delegates
