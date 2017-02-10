@@ -27,8 +27,20 @@ class tumuViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         tableView.estimatedRowHeight = 80
         manager.delegate = self
         manager.requestLocation()
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+        
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = refreshControl
+        } else {
+            tableView.backgroundView = refreshControl
+        }
     }
-    
+    func refresh(_ refreshControl: UIRefreshControl) {
+        // Do your job, when done:
+        refreshControl.endRefreshing()
+        self.viewDidLoad()
+    }
     // MARK: - CLLocationManager
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

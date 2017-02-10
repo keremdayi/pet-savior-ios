@@ -33,10 +33,22 @@ class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITable
         manager.delegate = self
         manager.requestWhenInUseAuthorization()
         manager.requestLocation()
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+        
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = refreshControl
+        } else {
+            tableView.backgroundView = refreshControl
+        }
     }
     
     // MARK: - CLLocationManager
-    
+    func refresh(_ refreshControl: UIRefreshControl) {
+        // Do your job, when done:
+        refreshControl.endRefreshing()
+        self.viewDidLoad()
+    }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print("received location info")
         let userLocation:CLLocation = locations[0]

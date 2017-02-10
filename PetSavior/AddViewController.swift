@@ -104,7 +104,7 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
                         }else{
                             // succeeded
                             print(result.response!)
-                            if let data = result.data{
+                            if result.data != nil{
                                 self.dismiss(animated: true, completion: nil)
                             }
                         }

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C5B1DFCF4D8540E9CD351B362DBA6CC6"
-               BuildableName = "SwiftyJSON.framework"
-               BlueprintName = "SwiftyJSON"
+               BlueprintIdentifier = "4443015CB99A026FF0A3202B0A1A7D03"
+               BuildableName = "SVProgressHUD.framework"
+               BlueprintName = "SVProgressHUD"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C5B1DFCF4D8540E9CD351B362DBA6CC6"
-            BuildableName = "SwiftyJSON.framework"
-            BlueprintName = "SwiftyJSON"
+            BlueprintIdentifier = "4443015CB99A026FF0A3202B0A1A7D03"
+            BuildableName = "SVProgressHUD.framework"
+            BlueprintName = "SVProgressHUD"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
