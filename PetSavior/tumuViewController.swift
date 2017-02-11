@@ -19,6 +19,10 @@ class tumuViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     
     let cellReuseIdentifier = "postCell"
     
+    var longitude : Double = 0.0
+    
+    var latitude : Double = 0.0
+    
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -36,18 +40,8 @@ class tumuViewController: UIViewController, UITableViewDelegate,UITableViewDataS
             tableView.backgroundView = refreshControl
         }
     }
-    func refresh(_ refreshControl: UIRefreshControl) {
-        // Do your job, when done:
-        refreshControl.endRefreshing()
-        self.viewDidLoad()
-    }
-    // MARK: - CLLocationManager
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("received location info")
-        let userLocation:CLLocation = locations[0]
-        let longitude = userLocation.coordinate.longitude
-        let latitude = userLocation.coordinate.latitude
+    func fetch(){
         Alamofire.request("http://petsavior.gokhanakkurt.com/posts/nearby", method: .get, parameters: ["longitude" : longitude, "latitude": latitude, "range": 100]).responseJSON { (result) in
             if let data = result.data{
                 self.resp = JSON(data)
@@ -55,6 +49,21 @@ class tumuViewController: UIViewController, UITableViewDelegate,UITableViewDataS
                 print("response \(self.resp)")
             }
         }
+    }
+    
+    func refresh(_ refreshControl: UIRefreshControl) {
+        refreshControl.endRefreshing()
+        fetch()
+    }
+    
+    // MARK: - CLLocationManager
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("received location info")
+        let userLocation:CLLocation = locations[0]
+        self.longitude = userLocation.coordinate.longitude
+        self.latitude = userLocation.coordinate.latitude
+        fetch()
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
