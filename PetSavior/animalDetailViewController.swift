@@ -16,6 +16,9 @@ class animalDetailViewController: UIViewController {
     @IBOutlet weak var animalDetailDescriptionTextView: UITextView!
     
     override func viewDidLoad() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        animalDetailImageView.isUserInteractionEnabled = true
+        animalDetailImageView.addGestureRecognizer(tapGestureRecognizer)
         super.viewDidLoad()
         self.animalDetailTitleTextView.layer.borderWidth = 1
         self.animalDetailTitleTextView.layer.borderColor = UIColor.lightGray.cgColor
@@ -35,21 +38,27 @@ class animalDetailViewController: UIViewController {
         animalDetailMapView.addAnnotation(annotation)
         // Do any additional setup after loading the view.
     }
-
+    func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        _ = tapGestureRecognizer.view as! UIImageView
+        // Your action
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
-    */
+        
+    }*/
+ 
 
 }

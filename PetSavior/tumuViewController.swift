@@ -13,6 +13,7 @@ import Alamofire
 import CoreLocation
 
 class tumuViewController: UIViewController, UITableViewDelegate,UITableViewDataSource, CLLocationManagerDelegate{
+    
     var resp : JSON?
     
     let manager = CLLocationManager()
@@ -27,6 +28,8 @@ class tumuViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 80
         manager.delegate = self
@@ -42,7 +45,7 @@ class tumuViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     }
     
     func fetch(){
-        Alamofire.request("http://petsavior.gokhanakkurt.com/posts/nearby", method: .get, parameters: ["longitude" : longitude, "latitude": latitude, "range": 100]).responseJSON { (result) in
+        Alamofire.request("http://petsavior.gokhanakkurt.com/posts/nearby", method: .get, parameters: ["longitude" : self.longitude, "latitude": self.latitude, "range": 100]).responseJSON { (result) in
             if let data = result.data{
                 self.resp = JSON(data)
                 self.tableView.reloadData()
