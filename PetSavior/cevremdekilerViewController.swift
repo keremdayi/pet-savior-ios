@@ -48,7 +48,7 @@ class cevremdekilerViewController: UIViewController, UITableViewDelegate,UITable
     }
     
     func fetch(){
-        Alamofire.request("http://petsavior.gokhanakkurt.com/posts/nearby", method: .get, parameters: ["longitude" : longitude, "latitude": latitude, "range": 3]).responseJSON { (result) in
+        Alamofire.request("http://centos.aci.k12.tr/posts/nearby", method: .get, parameters: ["longitude" : longitude, "latitude": latitude, "range": 3]).responseJSON { (result) in
             if let data = result.data{
                 self.resp = JSON(data)
                 self.tableView.reloadData()

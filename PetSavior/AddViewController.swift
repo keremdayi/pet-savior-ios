@@ -43,7 +43,7 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         manager.requestLocation()
     }
     
-    override dynamic func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override dynamic func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)               {
         self.view.endEditing(true)
     }
     
@@ -92,7 +92,7 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
                     }
                 }
                 
-            }, to: "http://petsavior.gokhanakkurt.com/posts", encodingCompletion: { (encodingCompletion) in
+            }, to: "http://centos.aci.k12.tr/posts", encodingCompletion: { (encodingCompletion) in
                 switch encodingCompletion {
                 case .success(let upload, _, _):
                     
